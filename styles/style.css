@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0400ff;
+    color: white;
+}
+
+.test-0-logo img {
+    width: 200px;
+}
+.header_list {
+    display: flex;
+    gap: 80px;
+    list-style: none; /* Убирает точки в списке */
+    padding: 0; /* Убирает возможные отступы у списка */
+}
+
+.header_list a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.booking-principles, .trust-company, .search-form, .promotions, .subscription {
+    padding: 40px;
+    text-align: center;
+    background-color: #0f69df;
+}
+
+.search-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.search-form input, .search-form button {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.promotions .promotion-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.promotion-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+.promotion-item img {
+    max-width: 100%;
+}
+
+.subscription form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer {
+    padding: 20px;
+    background-color: #002efd;
+    color: white;
+    text-align: center;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авиакомпания</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header>
+        <div class="test-0-logo">
+            <img src="img/logo.png" alt="Логотип авиакомпании">
+        </div>
+        <nav>
+            <ul class="header_list">
+                <li><a href="#" class="test-0-nav-1">Акции</a></li>
+                <li><a href="#" class="test-0-nav-2">Поиск</a></li>
+                <li><a href="#" class="test-0-nav-3">Регистрация на рейс</a></li>
+                <li><a href="#" class="test-0-nav-4">Личный кабинет</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Секция с принципами накопления бронирований -->
+    <section class="booking-principles">
+        <h2>Принципы накопления бронирований</h2>
+        <div class="principles-visual">
+            <p>Выберите дату, укажите количество бронирований, и мы покажем, как это влияет на стоимость и вероятность вылета.</p>
+            <!-- Анимация и ввод демо данных -->
+        </div>
+    </section>
+
+    <!-- Секция о доверии компании -->
+    <section class="trust-company">
+        <h2>Доверие компании</h2>
+        <p>Наша авиакомпания уже более 20 лет обеспечивает пассажирам безопасные и комфортные перелеты по всему миру. Мы ценим доверие каждого клиента и стремимся предоставлять высокий уровень обслуживания на всех этапах путешествия — от бронирования билетов до приземления в конечном пункте.
+
+            Мы регулярно обновляем наш парк воздушных судов, уделяя особое внимание безопасности полетов и комфорту пассажиров. Все наши самолеты проходят строгие проверки, а экипажи состоят из высококвалифицированных пилотов и бортпроводников с многолетним опытом.
+            
+            Клиенты доверяют нам не только за качество обслуживания, но и за нашу прозрачную политику. Мы всегда предоставляем полную информацию о рейсах, бронированиях и возможностях изменения условий полета. Наша служба поддержки работает круглосуточно, чтобы оперативно отвечать на любые вопросы.
+            
+            За годы работы мы завоевали репутацию надежного партнера, на которого можно положиться. Ваш комфорт и безопасность — наш приоритет.</p>
+    </section>
+
+    <!-- Форма поиска -->
+    <section class="search-form">
+        <h2>Поиск рейса</h2>
+        <form>
+            <label for="from">Откуда</label>
+            <input type="text" id="from" class="test-0-fd" placeholder="Город или аэропорт отправления">
+
+            <label for="to">Куда</label>
+            <input type="text" id="to" class="test-0-fa" placeholder="Город или аэропорт назначения">
+
+            <label for="departure">Туда</label>
+            <input type="date" id="departure" class="test-0-fdt">
+
+            <label for="return">Обратно</label>
+            <input type="date" id="return" class="test-0-fat">
+
+            <label for="passengers">Количество пассажиров</label>
+            <input type="number" id="passengers" class="test-0-fnp" min="1" max="8" value="1">
+
+            <button type="submit" class="test-0-fbs">Найти билеты</button>
+        </form>
+    </section>
+
+    <!-- Секция с акциями -->
+    <section class="promotions">
+        <h2>Акции</h2>
+        <div class="promotion-list">
+            <!-- Пример акции -->
+            <div class="promotion-item">
+                <img src="img/promotions/promotion1.jpg" alt="Акция" class="test-0-ai">
+                <h3 class="test-0-an">Название акции</h3>
+                <p class="test-0-ad">Краткое описание акции.</p>
+                <button class="test-0-abm">Подробнее</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма подписки на закрытые акции -->
+    <section class="subscription">
+        <h2>Подпишитесь на закрытые акции</h2>
+        <form>
+            <input type="email" class="test-0-sie" placeholder="Введите ваш Email">
+            <button type="submit" class="test-0-sbs">Подписаться</button>
+        </form>
+    </section>
+
+    <!-- Подвал сайта -->
+    <footer>
+        <p class="test-0-phone">Телефон: 8 (800) 100-10-10</p>
+        <nav>
+            <ul>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Политика конфиденциальности</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>
