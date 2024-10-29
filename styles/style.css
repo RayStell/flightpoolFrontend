@@ -1,3 +1,4 @@
+/* Общие стили */
 * {
     margin: 0;
     padding: 0;
@@ -7,39 +8,140 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    color: #333;
+    background-color: #f4f7fa;
 }
 
+/* Шапка сайта */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #0400ff;
+    background: linear-gradient(90deg, #002efd, #0084ff);
     color: white;
 }
 
 .test-0-logo img {
     width: 200px;
 }
+
 .header_list {
     display: flex;
-    gap: 80px;
-    list-style: none; /* Убирает точки в списке */
-    padding: 0; /* Убирает возможные отступы у списка */
+    gap: 60px;
+    list-style: none;
+    padding: 0;
 }
 
 .header_list a {
     color: white;
     text-decoration: none;
     font-size: 18px;
+    transition: color 0.3s ease;
 }
 
-.booking-principles, .trust-company, .search-form, .promotions, .subscription {
+.header_list a:hover {
+    color: #ffeb3b;
+}
+
+/* Принципы накопления бронирований */
+.booking-principles {
     padding: 40px;
     text-align: center;
-    background-color: #0f69df;
+    background-color: #e3f2fd;
 }
 
+.booking-principles h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.principles-visual {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #f4f9ff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Доверие компании */
+.trust-company {
+    padding: 40px;
+    background-color: #f4f9ff;
+    text-align: center;
+}
+
+.trust-company h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.trust-company p {
+    line-height: 1.8;
+    color: #555;
+}
+
+.trust-company-content {
+    display: flex; /* Используем Flexbox для выравнивания */
+    justify-content: space-between; /* Пространство между элементами */
+    align-items: flex-start; /* Выравниваем элементы по верхнему краю */
+    padding: 20px; /* Добавим отступы вокруг содержимого */
+}
+
+.trust-text {
+    flex: 1; /* Занимает одну часть пространства */
+    margin-right: 20px; /* Отступ справа от текстового блока */
+    text-align: justify;  
+}
+.trust-company p {
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 15px; /* Отступ между параграфами */
+}
+
+.trust-image {
+    flex: 1; /* Занимает одну часть пространства */
+}
+
+.trust-image img {
+    max-width: 100%; /* Убедитесь, что изображение не выходит за пределы контейнера */
+    height: auto; /* Сохраняем пропорции изображения */
+}
+
+
+/* Форма поиска */
+.search-form {
+    padding: 40px;
+    background-color: #0f69df;
+    color: white; /* Цвет текста внутри формы */
+    text-align: center;
+    background-image: url('../img/aircrafts/airbus.jpg');
+    background-size: 1520px 810px;
+    background-position: 0px -120px; /* изображение центрируется */
+    background-repeat: no-repeat;
+}
+
+.search-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.search-form .fromm, 
+.search-form .to,
+.search-form .departure,
+.search-form .return,
+.search-form .passengers {
+    font-size: 18px;
+    color: rgb(255, 255, 255); 
+    text-shadow: 
+        -1px -1px 0 rgba(0, 0, 0, 0.8),  
+        1px -1px 0 rgba(0, 0, 0, 0.8),  
+        -1px 1px 0 rgba(0, 0, 0, 0.8),  
+        1px 1px 0 rgba(0, 0, 0, 0.8);  
+}
+
+/* Остальные стили для формы */
 .search-form form {
     display: flex;
     flex-direction: column;
@@ -49,26 +151,102 @@ header {
 }
 
 .search-form input, .search-form button {
-    padding: 10px;
+    padding: 12px;
     font-size: 16px;
     width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-form input[type="text"], .search-form input[type="date"], .search-form input[type="number"] {
+    color: #333; /* Цвет текста в полях ввода */
+}
+
+.search-form button {
+    background-color: #ff9800;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.search-form button:hover {
+    background-color: #ffb74d;
+}
+
+/* Секция акций */
+.promotions {
+    padding: 40px;
+    background-color: #e3f2fd;
+    text-align: center;
+}
+
+.promotions h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
 .promotions .promotion-list {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
-.promotion-item {
+.promotion-list .promotion-item,
+.promotion-list .promotion-item1,
+.promotion-list .promotion-item2,
+.promotion-list .promotion-item3 {
     border: 1px solid #ccc;
     padding: 20px;
     width: 200px;
     text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.promotion-item img {
+.promotion-list .promotion-item:hover,
+.promotion-list .promotion-item1:hover,
+.promotion-list .promotion-item2:hover,
+.promotion-list .promotion-item3:hover {
+    transform: translateY(-5px);
+}
+
+.promotion-list .promotion-item img,
+.promotion-list .promotion-item1 img,
+.promotion-list .promotion-item2 img,
+.promotion-list .promotion-item3 img {
     max-width: 100%;
+    border-radius: 5px;
+}
+
+.test-0-abm {
+    margin-top: 10px;
+    padding: 8px;
+    font-size: 14px;
+    background-color: #0f69df;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.test-0-abm:hover {
+    background-color: #004db3;
+}
+
+/* Секция подписки */
+.subscription {
+    padding: 40px;
+    background-color: #f4f9ff;
+    text-align: center;
+}
+
+.subscription h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
 }
 
 .subscription form {
@@ -77,11 +255,38 @@ header {
     gap: 10px;
 }
 
+.subscription input {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.subscription button {
+    padding: 10px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.subscription button:hover {
+    background-color: #ffb74d;
+}
+
+/* Подвал сайта */
 footer {
     padding: 20px;
     background-color: #002efd;
     color: white;
     text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
 }
 
 footer nav ul {
@@ -94,4 +299,10 @@ footer nav ul {
 footer nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+footer nav ul li a:hover {
+    color: #ffeb3b;
 }

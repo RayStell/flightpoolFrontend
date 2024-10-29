@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Авиакомпания</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 </head>
 <body>
-
     <!-- Шапка сайта -->
     <header>
         <div class="test-0-logo">
-            <img src="img/logo.png" alt="Логотип авиакомпании">
+            <a href="index.html"><img src="img/logo.png" alt="Логотип авиакомпании" ></a>
         </div>
         <nav>
             <ul class="header_list">
@@ -19,6 +19,7 @@
                 <li><a href="#" class="test-0-nav-2">Поиск</a></li>
                 <li><a href="#" class="test-0-nav-3">Регистрация на рейс</a></li>
                 <li><a href="#" class="test-0-nav-4">Личный кабинет</a></li>
+                <li><i class="fas fa-user-circle"></i></li>
             </ul>
         </nav>
     </header>
@@ -35,32 +36,36 @@
     <!-- Секция о доверии компании -->
     <section class="trust-company">
         <h2>Доверие компании</h2>
-        <p>Наша авиакомпания уже более 20 лет обеспечивает пассажирам безопасные и комфортные перелеты по всему миру. Мы ценим доверие каждого клиента и стремимся предоставлять высокий уровень обслуживания на всех этапах путешествия — от бронирования билетов до приземления в конечном пункте.
-
-            Мы регулярно обновляем наш парк воздушных судов, уделяя особое внимание безопасности полетов и комфорту пассажиров. Все наши самолеты проходят строгие проверки, а экипажи состоят из высококвалифицированных пилотов и бортпроводников с многолетним опытом.
-            
-            Клиенты доверяют нам не только за качество обслуживания, но и за нашу прозрачную политику. Мы всегда предоставляем полную информацию о рейсах, бронированиях и возможностях изменения условий полета. Наша служба поддержки работает круглосуточно, чтобы оперативно отвечать на любые вопросы.
-            
-            За годы работы мы завоевали репутацию надежного партнера, на которого можно положиться. Ваш комфорт и безопасность — наш приоритет.</p>
+        <div class="trust-company-content">
+            <div class="trust-text">
+                <p>Наша авиакомпания уже более 20 лет обеспечивает пассажирам безопасные и комфортные перелеты по всему миру. Мы ценим доверие каждого клиента и стремимся предоставлять высокий уровень обслуживания на всех этапах путешествия — от бронирования билетов до приземления в конечном пункте.</p>
+                <p>Мы регулярно обновляем наш парк воздушных судов, уделяя особое внимание безопасности полетов и комфорту пассажиров. Все наши самолеты проходят строгие проверки, а экипажи состоят из высококвалифицированных пилотов и бортпроводников с многолетним опытом.</p>
+                <p>Клиенты доверяют нам не только за качество обслуживания, но и за нашу прозрачную политику. Мы всегда предоставляем полную информацию о рейсах, бронированиях и возможностях изменения условий полета. Наша служба поддержки работает круглосуточно, чтобы оперативно отвечать на любые вопросы.</p>
+                <p>За годы работы мы завоевали репутацию надежного партнера, на которого можно положиться. Ваш комфорт и безопасность — наш приоритет.</p>
+            </div>
+            <div class="trust-image">
+                <img src="img/airline-staff-never-fat-British-Airways-711420.jpg" alt="Фото аэропорт">
+            </div>
+        </div>
     </section>
-
+    
     <!-- Форма поиска -->
     <section class="search-form">
         <h2>Поиск рейса</h2>
         <form>
-            <label for="from">Откуда</label>
+            <label for="from" class="fromm">Откуда</label>
             <input type="text" id="from" class="test-0-fd" placeholder="Город или аэропорт отправления">
 
-            <label for="to">Куда</label>
+            <label for="to" class="to">Куда</label>
             <input type="text" id="to" class="test-0-fa" placeholder="Город или аэропорт назначения">
 
-            <label for="departure">Туда</label>
+            <label for="departure" class="departure">Туда</label>
             <input type="date" id="departure" class="test-0-fdt">
 
-            <label for="return">Обратно</label>
+            <label for="return" class="return">Обратно</label>
             <input type="date" id="return" class="test-0-fat">
 
-            <label for="passengers">Количество пассажиров</label>
+            <label for="passengers" class="passengers">Количество пассажиров</label>
             <input type="number" id="passengers" class="test-0-fnp" min="1" max="8" value="1">
 
             <button type="submit" class="test-0-fbs">Найти билеты</button>
@@ -74,6 +79,24 @@
             <!-- Пример акции -->
             <div class="promotion-item">
                 <img src="img/promotions/promotion1.jpg" alt="Акция" class="test-0-ai">
+                <h3 class="test-0-an">Название акции</h3>
+                <p class="test-0-ad">Краткое описание акции.</p>
+                <button class="test-0-abm">Подробнее</button>
+            </div>
+            <div class="promotion-item1">
+                <img src="img/promotions/promotion2.jpg" alt="Акция" class="test-0-ai">
+                <h3 class="test-0-an">Название акции</h3>
+                <p class="test-0-ad">Краткое описание акции.</p>
+                <button class="test-0-abm">Подробнее</button>
+            </div>
+            <div class="promotion-item2">
+                <img src="img/promotions/promotion3.jpg" alt="Акция" class="test-0-ai">
+                <h3 class="test-0-an">Название акции</h3>
+                <p class="test-0-ad">Краткое описание акции.</p>
+                <button class="test-0-abm">Подробнее</button>
+            </div>
+            <div class="promotion-item3">
+                <img src="img/promotions/promotion4.jpg" alt="Акция" class="test-0-ai">
                 <h3 class="test-0-an">Название акции</h3>
                 <p class="test-0-ad">Краткое описание акции.</p>
                 <button class="test-0-abm">Подробнее</button>
